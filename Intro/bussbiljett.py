@@ -10,4 +10,4 @@ elif age <= 19:
 elif age >= 20 and age <= 64:
     print("Du får betala 32kr (20-64)")
 elif age >=65:
-    print("Du får betala 21kr för du är gammal (65+)")
+    print("Du får betala 21kr, för att du är gammal (65+)")

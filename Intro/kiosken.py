@@ -1,5 +1,5 @@
 print("hej, Välkommen till min kiosk")
-x = input()
+x = input("Du: ")
 
 glass = 20
 glass = int(glass)

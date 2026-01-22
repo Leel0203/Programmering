@@ -1,0 +1,93 @@
+#shop = {
+#    "äpple" : 5,  #"äpple" : {"price" : 5, "amount" : 10}, 
+#    "mjölk" : 10,    #"mjölk" : {"price" : 10, "amount" : 20},
+#    "chips" : 15    #"chips" : {"price" : 15, "amount" : 15}
+#}
+
+shop = {
+    "äpple" : {"price" : 5, "amount" : 10},
+    "mjölk" : {"price" : 10, "amount" : 20},
+    "chips" : {"price" : 15, "amount" : 15}
+}
+
+sales = {
+
+}
+
+#shop["mjölk"]["amount"] som följd till shop{}
+
+print("Välkommen till Butikshanteraren 3000")
+print('Inloggad som Butiksägare')
+while True:
+    print("Vad vill du göra?")
+    print("1. Visa alla varor")
+    print("2. Lägg till en ny vara")
+    print("3. Ändra priset på vara")
+    print("4. Fylla på vara")
+    print("5. Sälja en vara")
+    print("6. Visa total intäkter")
+    print("q. Stänga av")
+
+    choice = input()
+
+    if choice == "1":
+        pass
+        print(sales)
+    elif choice == "2":
+        pass
+        print("vad vill du lägga till?")
+        lägga_till = input()
+        print("vad är priset av denna vara?")
+        lägga_till_pris = int(input())
+        print("Hur många finns det av denna vara på lagret?")
+        lägga_till_lager = int(input())
+        shop[lägga_till] = lägga_till_pris
+        sales[lägga_till] = lägga_till_lager
+    elif choice == "3":
+        pass
+        print("Vilken vara vill du byta pris på?")
+        byta_vara = input()
+        if byta_vara in shop:
+            print("Vad vill du att varan ska kosta?")
+            byta_pris = int(input())
+            shop[byta_vara] = byta_pris
+            print(shop)
+        else:
+            print("Varan finns inte i systemet.")
+    elif choice == "4":
+        pass
+        print("Namn på varan?")
+        lager_vara = input()
+        if lager_vara in sales:
+            print("Hur många av varan fylls på?")
+            lager_fylls_på = int(input())
+            sales[lager_vara] += lager_fylls_på
+            print(sales)
+        else:
+            print("Varan finns inte i vårat system.")
+    elif choice == "5":
+        pass
+        print("Vilken vara har det sålts av?")
+        vara_sold = input()
+        print("Hur många av denna vara har sålts?")
+        vara_sold_antal = int(input())
+        sales[vara_sold] -= vara_sold_antal
+        if sales[vara_sold] == 0:                                   #så jävla nöjd med att koden fungerade här LETS FUCKING GOOO
+            print("Varan tas bort från lagret")                     #satt och tänkte hur jag kunde få listan att bara inte
+            sales.pop(vara_sold)                                    #ta bort även om det inte fanns nog med antal
+        elif sales[vara_sold] > 0:                                  #och då fick jag tanken "varför lägger jag bara inte tillbaka värdet"
+            print("Varan finns kvar på lagret fast i mindre antal.")#jag svär min hjärna är astronomisk just nu
+        elif sales[vara_sold] < 0:
+            print("Det finns inte nog med varan på lagret för att sälja såhär många.")
+            sales[vara_sold] += vara_sold_antal 
+        else:                                   
+            ("Din kod suger balle.")            
+    elif choice == "6":                         
+        pass                                 
+        print()
+    elif choice == "q":
+        break
+    else:
+        print("Ogiltigt Svar")
+    
+    input("\nTryck enter för att fortsätta...")

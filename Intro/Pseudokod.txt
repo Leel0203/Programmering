@@ -1,0 +1,9 @@
+
+Fråga om ålder
+Användaren matar in ålder
+
+Om ålder 18 eller mer
+    Printa du är myndig
+
+om inte 
+    Printa du är inte myndig

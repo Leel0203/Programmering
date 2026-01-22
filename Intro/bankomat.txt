@@ -1,0 +1,13 @@
+
+printa Vad vill du göra med de 3 valen
+
+om valet är 1
+    visa saldo
+
+om valet är 2
+    visa saldo och fråga hur mycket de vill ta ut
+
+om valet är 3
+    fråga hur mycket de vill sätta in
+
+historik om man blir klar

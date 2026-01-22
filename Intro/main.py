@@ -10,4 +10,3 @@ print("Hur gammal är du?")
 ålder=int(ålder)
 
 print("wow", name, "kommer vara", ålder+10, "år gammal om 10 år")
-
