@@ -30,9 +30,3 @@ TotalMoneys = X * TAX
 
 print("Elräkning")
 print("Din totala elräkning från datum", start_date, "till", end_date, "är", TotalMoneys, "kr.")
-
-#Jag fastnade så jävla hårt på hur jag skulle använda datetime 
-#och kom inte på något så rad 16-20 och "from datetime" i rad 1
-#kan jag inte ta äran för
-#jag skriver om koden själv om det behövs
-#3 timmar sömn inte rekommenderat

@@ -1,7 +1,7 @@
-def int_checker(prompt):    
+def int_checker(prompt):
     while True:
         try:
-            return int(input(prompt))
+            int(input(prompt))
         except ValueError:
             print("Ange en integer.")
 
