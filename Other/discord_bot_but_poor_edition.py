@@ -195,4 +195,4 @@ async def password(ctx):
 
     await ctx.send(random_password)   #alternativt kunde man köra password = secrets.token_urlsafe(12), men det är en one liner
 
-bot.run("MTQ4MTU3MDIwNTczNjg5NDYwNA.GUpDaX.K5__WDhxaFUZZDvh4jnE95jwITDMjRIJJAYdKc")
+bot.run("")
